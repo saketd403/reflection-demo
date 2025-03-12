@@ -1,0 +1,19 @@
+{
+    "type": "json_schema",
+    "json_schema":{
+        "name": "generate_code_schema",
+        "description": "Schema to generate python code.",
+        "strict": true,
+        "schema": {
+                "type": "object",
+                "properties":{
+                    "code": {
+                                "type":"string",
+                                "description":"Code generated/modified as per user's request/feedback. If user makes any non-code related request, return 'INVALID REQUEST'"
+                            }     
+                },
+                "required":["code"],
+                "additionalProperties":false
+            }
+    }
+}
