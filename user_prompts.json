@@ -1,0 +1,4 @@
+{
+    "user_requests":["Write a function that takes an array of integers along with an integer number to search as input. The array is sorted in descending order. Your function should search the input number in the given array and return its index. If the number is not found, return -1."
+       ]
+}

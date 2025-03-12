@@ -1,0 +1,24 @@
+{
+    "type": "json_schema",
+    "json_schema":{
+        "name": "feedback_schema",
+        "description": "Schema to provide feedback for the given code.",
+        "strict": true,
+        "schema": {
+                "type": "object",
+                "properties":{
+                    "evaluation": {
+                                "type":"string",
+                                "description":"Status of feedback generated. 'PASS' -> If no improvements suggested else 'NEEDS IMPROVEMENT'",
+                                "enum":["PASS","NEEDS IMPROVEMENT"]
+                            },
+                    "feedback": {
+                                "type":"string",
+                                "description":"Feedback to improve the given code."
+                    }
+                },
+                "required":["evaluation","feedback"],
+                "additionalProperties":false
+            }
+    }
+}
